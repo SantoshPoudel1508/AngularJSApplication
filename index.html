@@ -8,7 +8,23 @@
 <body>
     <h1>AngularJS Application</h1>
     <div ng-controller="firstCont">
-        Name: {{name}}
+        <p>{{sayHello()}}</p>
+        <p><input type="text" ng-model="name" /></p><!-- Binding 'name' variable scope from angular to html -->
+        <p>Name: {{name}}</p>
+    </div>
+
+    <h1>Name Calculator</h1>
+    <div ng-controller="nameCalculator">
+        <div>
+            Your name: <input type="text" ng-model="name" ng-keyup="calcNumeric();" />
+        </div>
+        <div>Total Numeric value of person : {{totalValue}}</div>
+    </div>
+
+    <h1>Dependency Injection</h1>
+    <div ng-controller="dependencyInjection">
+        <input type="text" ng-model="name" ng-blur="upper();"/>
+        
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
