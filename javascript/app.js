@@ -45,6 +45,12 @@
             var upCase = $filter('uppercase'); //This will make the text in uppercase
             $scope.name = upCase($scope.name);
         };
+
+        $scope.num = 1;
+
+        $scope.selectNumber = function () {
+            $scope.num = 2;
+        };
     }
 
 })();

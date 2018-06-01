@@ -23,8 +23,15 @@
 
     <h1>Dependency Injection</h1>
     <div ng-controller="dependencyInjection">
-        <input type="text" ng-model="name" ng-blur="upper();"/>
-        
+        <div>
+            <input type="text" ng-model="name" ng-blur="upper();"/>
+        </div>
+        <br/>
+        <div>
+            <button ng-click="selectNumber()">Number</button>
+            <br/>
+            <img ng-src="images/logo{{num}}.png" />
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
