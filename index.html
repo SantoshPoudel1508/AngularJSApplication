@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="firstApp">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="javascript/app.js" ></script>
     <title>AngularJS Application</title>
 </head>
 <body>
-    <h1>Low cohesion and Tight coupling</h1>
-    <div id="nameCalculator">
-        <div>
-            Your name: <input type="text" id="name" />
-        </div>
-        <div id="output"></div>
+    <h1>AngularJS Application</h1>
+    <div ng-controller="firstCont">
+        {{name}}
     </div>
 </body>
 </html>
